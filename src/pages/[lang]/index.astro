@@ -378,6 +378,39 @@ const schemas = [
     countryCount={countryCount}
     vodCount={vodCount}
     primaryColor={data.primaryColor}
+    translations={{
+      whyChoose: (t.seoContent?.whyChoose || 'Why Choose {brand}?').replace('{brand}', data.brandName || 'IPTV Service'),
+      subtitle: (t.seoContent?.subtitle || 'The most trusted IPTV service provider with {channels}+ live channels, {vod}+ movies & series, and customers in {countries}+ countries.').replace('{channels}', channelCount.toLocaleString()).replace('{vod}', vodCount.toLocaleString()).replace('{countries}', String(countryCount)),
+      premiumStreaming: t.seoContent?.premiumStreaming || 'Premium IPTV Streaming',
+      premiumStreamingDesc: (t.seoContent?.premiumStreamingDesc || '{brand} delivers crystal-clear HD and 4K streaming to your favorite devices.').replace('{brand}', data.brandName || 'IPTV Service'),
+      worldwideCoverage: t.seoContent?.worldwideCoverage || 'Worldwide Coverage',
+      worldwideCoverageDesc: (t.seoContent?.worldwideCoverageDesc || 'Access channels from over {countries}+ countries.').replace('{countries}', String(countryCount)),
+      noBuffering: t.seoContent?.noBuffering || 'No Buffering Technology',
+      noBufferingDesc: t.seoContent?.noBufferingDesc || 'Our global server network ensures the fastest streaming speeds with minimal latency.',
+      securePrivate: t.seoContent?.securePrivate || 'Secure & Private',
+      securePrivateDesc: t.seoContent?.securePrivateDesc || 'Your privacy matters. We use industry-standard encryption to protect your connection.',
+      instantActivation: t.seoContent?.instantActivation || 'Instant Activation',
+      instantActivationDesc: t.seoContent?.instantActivationDesc || 'Get started in minutes, not days. After purchase, your credentials are delivered instantly.',
+      support247: t.seoContent?.support247 || '24/7 Customer Support',
+      support247Desc: t.seoContent?.support247Desc || 'Our dedicated support team is available around the clock via WhatsApp, Telegram, and email.',
+      whatIsIPTV: (t.seoContent?.whatIsIPTV || 'What is IPTV and How Does {brand} Work?').replace('{brand}', data.brandName || 'IPTV Service'),
+      whatIsIPTVDesc: (t.seoContent?.whatIsIPTVDesc || 'IPTV delivers television content over the internet. {brand} provides access to {channels}+ live TV channels.').replace('{brand}', data.brandName || 'IPTV Service').replace('{channels}', channelCount.toLocaleString()),
+      keyBenefits: (t.seoContent?.keyBenefits || 'Key Benefits of {brand}:').replace('{brand}', data.brandName || 'IPTV Service'),
+      costEffective: t.seoContent?.costEffective || 'Cost-Effective: Save up to 85% compared to traditional cable or satellite TV subscriptions',
+      multiDevice: t.seoContent?.multiDevice || 'Multi-Device Support: Watch on Smart TVs, Android boxes, Firestick, iOS, Android phones, tablets, and more',
+      hdQuality: t.seoContent?.hdQuality || 'HD & 4K Quality: Enjoy crystal-clear picture quality on all supported channels',
+      epgGuide: t.seoContent?.epgGuide || 'EPG (Electronic Program Guide): Never miss your favorite shows with our comprehensive TV guide',
+      multiLanguage: t.seoContent?.multiLanguage || 'Multi-Language Support: Content available in multiple languages',
+      dvrCatchUp: t.seoContent?.dvrCatchUp || 'DVR & Catch-Up: Record live TV and watch programs you missed for up to 7 days',
+      compatibleDevices: t.seoContent?.compatibleDevices || 'Compatible Devices and Apps',
+      compatibleDevicesDesc: (t.seoContent?.compatibleDevicesDesc || '{brand} works seamlessly with all popular IPTV apps.').replace('{brand}', data.brandName || 'IPTV Service'),
+      sportsCoverage: t.seoContent?.sportsCoverage || 'Sports Coverage',
+      sportsCoverageDesc: t.seoContent?.sportsCoverageDesc || 'Never miss a game with our comprehensive sports coverage.',
+      entertainment: t.seoContent?.entertainment || 'Entertainment & Movies',
+      entertainmentDesc: (t.seoContent?.entertainmentDesc || 'With {vod}+ movies and TV series on demand.').replace('{vod}', vodCount.toLocaleString()),
+      showLess: t.seoContent?.showLess || 'Show Less',
+      learnMore: (t.seoContent?.learnMore || 'Learn More About {brand}').replace('{brand}', data.brandName || 'IPTV Service'),
+    }}
   />
 
   <CTASection
