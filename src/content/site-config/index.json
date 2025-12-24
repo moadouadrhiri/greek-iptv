@@ -1,0 +1,61 @@
+[
+  {
+    "id": "main",
+    "brandName": "greek iptv",
+    "siteUrl": "https://greek-iptv.pages.dev",
+    "focusKeyword": "IPTV",
+    "country": "United States",
+    "countryCode": "US",
+    "locale": "en-US",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "supportEmail": "support@example.com",
+    "guaranteeDays": 7,
+    "primaryCtaText": "Get Started Now",
+    "secondaryCtaText": "Learn More",
+    "trustPoints": [
+      "24/7 Customer Support",
+      "Instant Activation",
+      "No Contract Required",
+      "7-Day Money Back Guarantee"
+    ],
+    "localContext": {
+      "popularDevices": [
+        "Smart TV",
+        "Fire Stick",
+        "Android Box",
+        "iOS",
+        "Android"
+      ],
+      "popularUseCases": [
+        "Live Sports",
+        "Movies",
+        "TV Shows",
+        "International Channels"
+      ],
+      "paymentMethods": [
+        "Credit Card",
+        "PayPal",
+        "Crypto"
+      ]
+    },
+    "channelCount": 55000,
+    "vodCount": 90000,
+    "countryCount": 100,
+    "primaryColor": "#3b82f6",
+    "secondaryColor": "#8b5cf6",
+    "templateId": "glass",
+    "defaultLanguage": "el",
+    "enabledLanguages": [
+      "el",
+      "en"
+    ],
+    "responseTime": "under 2 hours",
+    "organizationDescription": "Το greek iptv προσφέρει την πιο ολοκληρωμένη τηλεοπτική εμπειρία στην Ελλάδα, με άπειρες επιλογές καναλιών και περιεχομένου σε κάθε συσκευή. Ανακαλύψτε την αγαπημένη σας διασκέδαση σε μία πλατφόρμα.",
+    "paymentSettings": {
+      "buttonText": "BUY NOW",
+      "paymentType": "paygate",
+      "paygateWalletAddress": "0x1e2c390ae5602f3662332061cae6c5658cd54e22"
+    }
+  }
+]
