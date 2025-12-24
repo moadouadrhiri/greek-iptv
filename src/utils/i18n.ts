@@ -53,6 +53,22 @@ export function isRTL(lang: LanguageCode): boolean {
   return LANGUAGES[lang]?.dir === 'rtl';
 }
 
+export function getLanguageFromUrl(url: URL): LanguageCode {
+  return getLanguageFromURL(url.pathname);
+}
+
+const DATE_LOCALES: Record<LanguageCode, string> = {
+  en: 'en-US', es: 'es-ES', fr: 'fr-FR', de: 'de-DE', it: 'it-IT',
+  pt: 'pt-BR', nl: 'nl-NL', pl: 'pl-PL', ru: 'ru-RU', ar: 'ar-SA',
+  zh: 'zh-CN', ja: 'ja-JP', ko: 'ko-KR', hi: 'hi-IN', tr: 'tr-TR',
+  vi: 'vi-VN', th: 'th-TH', sv: 'sv-SE', no: 'nb-NO', da: 'da-DK',
+  fi: 'fi-FI', el: 'el-GR', he: 'he-IL', id: 'id-ID', ms: 'ms-MY',
+} as Record<LanguageCode, string>;
+
+export function getDateLocale(lang: LanguageCode): string {
+  return DATE_LOCALES[lang] || 'en-US';
+}
+
 type UITranslations = typeof uiTranslationsData;
 
 function deepMerge<T extends Record<string, any>>(target: T, source: T): T {
